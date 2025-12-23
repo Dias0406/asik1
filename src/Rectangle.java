@@ -20,7 +20,7 @@ public class Rectangle {
     }
     public void setHeight(double height) {
         if (height <= 0){
-            throw new IllegalArgumentException("Height must be greater than 0");
+            throw new IllegalArgumentException("Height must be positive");
         }
         else this.height = height;
     }
@@ -30,7 +30,7 @@ public class Rectangle {
     }
     public void setWidth(double width){
         if (width <= 0){
-            throw new IllegalArgumentException("Width must be greater than 0");
+            throw new IllegalArgumentException("Width must be positive");
         }
         else this.width = width;
     }
