@@ -1,5 +1,3 @@
-package library;
-
 public class Book {
     private int id;
     private static int idGen = 1;
