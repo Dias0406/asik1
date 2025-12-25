@@ -14,6 +14,12 @@ public class Rectangle {
         setWidth(width);
         setHeight(height);
     }
+    public void setWidth(double width){
+        if (width <= 0){
+            throw new IllegalArgumentException("Width must be positive");
+        }
+        else this.width = width;
+    }
 
     public double getHeight() {
         return height;
@@ -24,17 +30,6 @@ public class Rectangle {
         }
         else this.height = height;
     }
-
-    public double getWidth(){
-        return width;
-    }
-    public void setWidth(double width){
-        if (width <= 0){
-            throw new IllegalArgumentException("Width must be positive");
-        }
-        else this.width = width;
-    }
-
     public double area(){
         return width * height;
     }
