@@ -36,10 +36,10 @@ public class Rectangle {
     }
 
     public double area(){
-        return this.width * this.height;
+        return width * height;
     }
     public double perimeter(){
-        return 2*(this.width + this.height);
+        return 2*(width + height);
     }
 
     @Override
